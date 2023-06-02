@@ -24,6 +24,10 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/', function () {
+     return view('homepage');
+ });
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -31,5 +35,5 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
-    })->name('dashboard');
+    })->name('homepage');
 });
