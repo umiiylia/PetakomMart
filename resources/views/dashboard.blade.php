@@ -239,11 +239,11 @@
             
         </div>
         <ul id="tab">
-        <li class="item" style="float: right;"><a href="dashboard.blade.php">Login</a></li>
-				<li class="item" style="float: right;"><a href="dashboard.blade.php">Home</a></li>
-        <!--<li class="item"><a href="index.php">Inventory</a></li>-->
-				<li class="item"><a href="ListOfItem.blade.php">Payment</a></li>
-				<li class="item"><a href="reportMainPage.blade.php">Report</a></li> 
+        <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li>
+				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li>
+        <li class="item"><a href="View_Inventory">Inventory</a></li>
+				<li class="item"><a href="ListOfItem">Payment</a></li>
+				<li class="item"><a href="reportMainPage">Report</a></li> 
         <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px"></div>
         </div>
 			</ul>

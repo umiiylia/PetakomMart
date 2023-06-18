@@ -26,10 +26,6 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/', function () {
-    return view('ListOfItem');
-        
-});
 
 /*Route::get('/ListSearchItem', function () {
     dump('working');
@@ -45,6 +41,22 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('ListOfItem'); 
+        return view('dashboard');
+    })->name('dashboard'); 
+});
+
+Route::get('/ListOfItem', function () {
+    return view('ListOfItem'); 
+});
+
+Route::get('/reportMainPage', function () {
+    return view('reportMainPage'); 
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard'); 
+});
+
+Route::get('/View_Inventory', function () {
+    return view('View_Inventory'); 
 });
