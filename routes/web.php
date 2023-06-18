@@ -26,15 +26,9 @@ Route::get('/', function () {
     ]);
 });
 
-//Route::get('/', 'ListSearchItemController@index');
-//Route::get('/', 'ListOfItemController@search');
-
 Route::get('/', function () {
-    return view('ListOfItem'); //dashboard or home
-});
-
-Route::get('/ListOfItem', function () {
-    return view('ListOfItem'); //dashboard or home
+    return view('ListOfItem');
+        
 });
 
 /*Route::get('/ListSearchItem', function () {
