@@ -24,8 +24,10 @@ Route::get('/', function () {
     ]);
 });
 
+
+
 Route::get('/', function () {
-    return view('ListOfItem');
+    return view('dashboard');
         
 });
 
