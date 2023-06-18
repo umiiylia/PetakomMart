@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\InventoryController;
+use App\Models\Inventory;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -24,10 +26,24 @@ Route::get('/', function () {
     ]);
 });
 
+//Route::get('/', 'ListSearchItemController@index');
+//Route::get('/', 'ListOfItemController@search');
+
 Route::get('/', function () {
-    return view('ListOfItem');
-        
+    return view('ListOfItem'); //dashboard or home
 });
+
+Route::get('/ListOfItem', function () {
+    return view('ListOfItem'); //dashboard or home
+});
+
+/*Route::get('/ListSearchItem', function () {
+    dump('working');
+    //return view('ListSearchItem'); //dashboard or home
+});*/
+
+//Route::get('/','ListOfItem');
+//Route::get('/ListSearchItem','ListSearchItemController@index');
 
 Route::middleware([
     'auth:sanctum',
@@ -36,5 +52,5 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
-    })->name('ListOfItem');
+    })->name('ListOfItem'); 
 });

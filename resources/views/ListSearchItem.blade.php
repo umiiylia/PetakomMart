@@ -134,11 +134,8 @@
     <th></th>
     <th></th>
     <th></th>
-    <th>
-      <form>
-      Search for Item:<input type="text" placeholder="Search..." >
-      <button type="submit" href="{{ url('ListSearchItem') }}">Search</button></th>
-      </form>
+    <th>Search for Item:<input type="text" placeholder="Search..." >
+      <button type="submit" href="ListSearchItem">Search</button></th>
   </tr>
   <tr>
     <th>Item ID</th>
@@ -146,6 +143,15 @@
     <th>Quantity</th>
     <th>Price (RM)</th>
     <th>Search Result</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      {dd}
+    </td>
   </tr>
 
 </table>
