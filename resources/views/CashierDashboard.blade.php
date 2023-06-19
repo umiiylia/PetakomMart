@@ -1,10 +1,12 @@
+<!-- index.php -->
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Dashboard </title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     
@@ -77,7 +79,7 @@
       #navbar ul li a:hover 
       {
         color: black;
-        background-color: pink;
+        background-color: #e8ead3;
       }
 
       /* Home Section */
@@ -101,7 +103,7 @@
       {
         content: "";
         position: absolute;
-        background: url('food.jpg') no-repeat center center/cover;
+        background: URL('assets/images/bg.png') no-repeat center center/cover;
         height: 720px;
         width: 100%;
         top: 0px;
@@ -112,7 +114,7 @@
 
       #home h1 
       {
-        color: white;
+        color: black;
         text-align: center;
         font-size: 5.5rem;
         font-family: 'Fredoka One', cursive;
@@ -225,23 +227,6 @@
       {
         font-size: 1.5rem;
       }
-
-      /*css for table*/
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-    
-    th, td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    th {
-        background-color: #f2f2f2;
-    }
-
       </style>
 </head> 
 
@@ -264,66 +249,22 @@
         </div>
 			</ul>
     </nav>
-<h2>Payment</h2>
-  <table>
-  <tr>
-    <th>List of Item</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th>
-      <form type="get" action="{{url('/search')}}">
-      Search for Item:<input name="query" type="text" placeholder="Search..." >
-      <a href="{{url('/search')}}"><button type="submit">Search</button></a>
-      </form>
-    </th>
-  </tr>
-  <tr>
-    <th>Item ID</th>
-    <th>Item Name</th>
-    <th>Quantity</th>
-    <th>Price (RM)</th>
-    <th>Search Result</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Teh Hijau Yeos</td>
-    <td>1</td>
-    <td>2.50</td>
-    <td>
-       
-    </td>
-  </tr>
-  <tr>
-    <td></td>
-  <td>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-    </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </td>
-  </tr>
+    <!-- Home Section -->
+    <section id="home">
+        <br>
+        <h2 class="h-secondary"> Hi Cashier!</h2>
+        <h1 class="h-primary">Welcome to PETAKOM MINI MART</h1>
+    </section><br><br><br><br>
 
-</table>
+    <!-- Service Container -->
+    
   
+    </section>
+    <footer>
+        <div class="center">
+        <p> &copy; 2023 PETAKOM MINI MART. All right reserved. </p>
+        </div>
+    </footer>
 </body>
 </html>

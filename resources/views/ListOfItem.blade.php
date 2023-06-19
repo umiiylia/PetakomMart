@@ -254,15 +254,16 @@
             
         </div>
         <ul id="tab">
-        <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li>
-				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li>
-        <li class="item"><a href="View_Inventory">Inventory</a></li>
+        <li class="item" style="float: right;"><a href="CashierDashboard">Dashboard</a></li>
+				<li class="item" style="float: right;"><a href="CashierDashboard">Profile</a></li>
 				<li class="item"><a href="ListOfItem">Payment</a></li>
-				<li class="item"><a href="reportMainPage">Report</a></li> 
-        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px"></div>
+        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" height="100px">
+        </div>
+            <li><a href="dashboard">Admin</a></li>
+            <li><a href="CoordinatorDashboard">Coordinator</a></li>
         </div>
 			</ul>
-</nav>
+    </nav>
 <h2>Payment</h2>
   <table>
   <tr>
@@ -271,10 +272,11 @@
     <th></th>
     <th></th>
     <th>
-      <form>
-      Search for Item:<input type="text" placeholder="Search..." >
-      <button type="submit" href="{{ url('ListSearchItem') }}">Search</button></th>
+      <form type="get" action="{{url('/search')}}">
+      Search for Item:<input name="query" type="text" placeholder="Search..." >
+      <a href="{{url('/search')}}"><button type="submit">Search</button></a>
       </form>
+    </th>
   </tr>
   <tr>
     <th>Item ID</th>
@@ -282,6 +284,15 @@
     <th>Quantity</th>
     <th>Price (RM)</th>
     <th>Search Result</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      {dd}
+    </td>
   </tr>
 
 </table>

@@ -1,5 +1,5 @@
 <!-- index.php -->
-<!-- Homepage of the foodie system. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,7 +71,7 @@
       {
         color: white;
         display: block;
-        padding: 30px 50px;
+        padding: 30px 40px;
         border-radius: 20px;
         text-decoration: none;
       }
@@ -79,7 +79,7 @@
       #navbar ul li a:hover 
       {
         color: black;
-        background-color: pink;
+        background-color: #e8ead3;
       }
 
       /* Home Section */
@@ -103,7 +103,7 @@
       {
         content: "";
         position: absolute;
-        background: url('food.jpg') no-repeat center center/cover;
+        background: URL('assets/images/bg.png') no-repeat center center/cover;
         height: 720px;
         width: 100%;
         top: 0px;
@@ -114,7 +114,7 @@
 
       #home h1 
       {
-        color: white;
+        color: black;
         text-align: center;
         font-size: 5.5rem;
         font-family: 'Fredoka One', cursive;
@@ -227,6 +227,7 @@
       {
         font-size: 1.5rem;
       }
+      
       </style>
 </head> 
 
@@ -242,21 +243,26 @@
         <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li>
 				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li>
         <li class="item"><a href="View_Inventory">Inventory</a></li>
-				<li class="item"><a href="ListOfItem">Payment</a></li>
-				<li class="item"><a href="reportMainPage">Report</a></li> 
-        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px"></div>
+				<li class="item"><a href="report">Report</a></li> 
+        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px">
+        </div>
+        <ul><li><a href="CashierDashboard">Cashier</a></li>
+        <li><a href="CoordinatorDashboard">Coordinator</a></li>
+        
         </div>
 			</ul>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
-        <br><h1 class="h-primary">Welcome to PETAKOM MINI MART</h1>
-    </section><br><br><br><br><br><br><br>
+        <br>
+        <h2 class="h-secondary"> Hi admin!</h2>
+        <h1 class="h-primary">Welcome to PETAKOM MINI MART</h1>
+    </section><br><br><br><br>
 
     <!-- Service Container -->
     
-    <br><br>
+    
     </section>
     <footer>
         <div class="center">

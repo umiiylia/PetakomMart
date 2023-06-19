@@ -1,5 +1,5 @@
 <!-- index.php -->
-<!-- Homepage of the foodie system. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +79,7 @@
       #navbar ul li a:hover 
       {
         color: black;
-        background-color: pink;
+        background-color: #e8ead3;
       }
 
       /* Home Section */
@@ -103,7 +103,7 @@
       {
         content: "";
         position: absolute;
-        background: url('food.jpg') no-repeat center center/cover;
+        background: URL('assets/images/bg.png') no-repeat center center/cover;
         height: 720px;
         width: 100%;
         top: 0px;
@@ -114,7 +114,7 @@
 
       #home h1 
       {
-        color: white;
+        color: black;
         text-align: center;
         font-size: 5.5rem;
         font-family: 'Fredoka One', cursive;
@@ -227,7 +227,51 @@
       {
         font-size: 1.5rem;
       }
-      </style>
+
+      .sidenav 
+      {
+        height: 70%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 10;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10;
+        opacity: 0.4;
+        display: block;
+        border-radius: 20px;
+      }
+
+      .sidenav a 
+      {
+        padding: 50px 50px 50px 50px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        border-radius: 20px;
+      }
+
+      .sidenav a:hover 
+      {
+        color: black;
+        background-color: #e8ead3
+      }
+
+      @media screen and (max-height: 300px) 
+      {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 1px;}
+      }
+
+</style>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head> 
 
 <body>
@@ -242,10 +286,19 @@
         <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li>
 				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li>
         <li class="item"><a href="View_Inventory">Inventory</a></li>
-				<li class="item"><a href="ListOfItem">Payment</a></li>
-				<li class="item"><a href="reportMainPage">Report</a></li> 
-        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px"></div>
+				<li class="item"><a href="report">Report</a></li> 
+        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px">
+        </div>
+        <ul><li><a href="CashierDashboard">Cashier</a></li>
+        <li><a href="CoordinatorDashboard">Coordinator</a></li>
+        
         </div>
 			</ul>
     </nav>
+
+    <div class="sidenav">
+        <a href="report">Daily</a>//view daily chart
+        <a href="weekly">Weekly</a>//view weekly chart
+       <a href="monthly">Monthly</a>//view monthly chart
+    </div>
 </body>

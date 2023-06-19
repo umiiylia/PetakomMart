@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\ListOfItemController;
 use App\Models\Inventory;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
+    dump('working');
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
@@ -41,6 +43,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
+        dump('hehe');
         return view('dashboard');
     })->name('dashboard'); 
 });
@@ -49,14 +52,33 @@ Route::get('/ListOfItem', function () {
     return view('ListOfItem'); 
 });
 
-Route::get('/reportMainPage', function () {
-    return view('reportMainPage'); 
+Route::get('/report', function () {
+    return view('report'); 
 });
 
 Route::get('/dashboard', function () {
     return view('dashboard'); 
 });
 
-Route::get('/View_Inventory', function () {
-    return view('View_Inventory'); 
+Route::get('/CashierDashboard', function () {
+    return view('CashierDashboard'); 
 });
+
+Route::get('/CoordinatorDashboard', function () {
+    return view('CoordinatorDashboard'); 
+});
+
+Route::get('/View_Inventory', function () {
+    return view('View_Inventory');
+});
+
+Route::get('/search', [\App\Http\Controllers\ListOfItemController::class, 'search', 'index']) ->name('query');
+
+Route::get('/paymentGateway', function(){
+    return view('paymentGateway');
+});
+/*
+Route::get('/ListSearchItem', function () {
+    return view('ListSearchItem');
+});
+*/
