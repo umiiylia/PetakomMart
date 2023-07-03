@@ -103,7 +103,7 @@
       {
         content: "";
         position: absolute;
-        background: URL('assets/images/bg.png') no-repeat center center/cover;
+        background: URL('assets/images/bg.jpeg') no-repeat center center/cover;
         height: 720px;
         width: 100%;
         top: 0px;
@@ -246,8 +246,8 @@
 				<li class="item"><a href="reportMainPage">Report</a></li> 
         <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" height="100px"></div>
 
-        <li><a href="dashboard">Admin</a></li>
-        <li><a href="CashierDashboard">Cashier</a></li>
+        <li><a href="dashboard">Admin</a></li><!--admin page-->
+        <li><a href="CashierDashboard">Cashier</a></li><!--cashier page-->
         </div>
 			</ul>
     </nav>

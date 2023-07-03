@@ -56,6 +56,10 @@ Route::get('/report', function () {
     return view('report'); 
 });
 
+Route::get('/reportMainPage', function () {
+    return view('reportMainPage'); 
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard'); 
 });
@@ -76,6 +80,18 @@ Route::get('/search', [\App\Http\Controllers\ListOfItemController::class, 'searc
 
 Route::get('/paymentGateway', function(){
     return view('paymentGateway');
+});
+
+Route::get('/Monthly', function(){
+    return view('Monthly');
+});
+
+Route::get('/Weekly', function(){
+    return view('Weekly');
+});
+
+Route::get('/print', function(){
+    return view('print');
 });
 /*
 Route::get('/ListSearchItem', function () {

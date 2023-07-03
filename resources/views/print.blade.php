@@ -71,7 +71,7 @@
       {
         color: white;
         display: block;
-        padding: 30px 50px;
+        padding: 30px 40px;
         border-radius: 20px;
         text-decoration: none;
       }
@@ -227,6 +227,7 @@
       {
         font-size: 1.5rem;
       }
+      
       </style>
 </head> 
 
@@ -235,32 +236,33 @@
     <nav id="navbar">
         
         <div id="logo">
-            <img src="{{ URL('assets/images/UMP.png')}}" alt="UMP.com" width="130px" height="100px">
+            <img src="{{ URL('assets/images/UMP.png')}}" alt="UMP.com" width="130px" height="100px"><!--image UMP-->
             
         </div>
         <ul id="tab">
-        <li class="item" style="float: right;"><a href="CashierDashboard">Dashboard</a></li>
-				<li class="item" style="float: right;"><a href="CashierDashboard">Profile</a></li>
-        <li class="item" style="float: right;"><a href="dashboard">Duty Roster</a></li>
-				<li class="item"><a href="ListOfItem">Payment</a></li>
-        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" height="100px">
+        <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li><!--dashboard page-->
+				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li><!--profile page-->
+        <li class="item"><a href="View_Inventory">Inventory</a></li><!--inventory page-->
+				<li class="item"><a href="reportMainPage">Report</a></li> <!--report page-->
+        <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px">
         </div>
-            <li><a href="dashboard">Admin</a></li><!--admin page-->
-            <li><a href="CoordinatorDashboard">Coordinator</a></li><!--coordinator page-->
+        <ul><li><a href="CashierDashboard">Cashier</a></li><!--cashier page-->
+        <li><a href="CoordinatorDashboard">Coordinator</a></li><!--coordinator page-->
+        
         </div>
 			</ul>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
-        <br>
-        <h2 class="h-secondary"> Hi Cashier!</h2>
-        <h1 class="h-primary">Welcome to PETAKOM MINI MART</h1>
+        <br><!-- [print] Section -->
+        <h2 class="h-secondary"> Report is SAVE!  /  DOWNLOADED!</h2>
+        
     </section><br><br><br><br>
 
     <!-- Service Container -->
     
-  
+    
     </section>
     <footer>
         <div class="center">

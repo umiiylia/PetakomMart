@@ -103,7 +103,7 @@
       {
         content: "";
         position: absolute;
-        background: URL('assets/images/bg.png') no-repeat center center/cover;
+        background: URL('assets/images/bg.jpeg') no-repeat center center/cover;
         height: 720px;
         width: 100%;
         top: 0px;
@@ -240,10 +240,11 @@
             
         </div>
         <ul id="tab">
-        <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li>
-				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li>
-        <li class="item"><a href="View_Inventory">Inventory</a></li>
-				<li class="item"><a href="report">Report</a></li> 
+        <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li><!--dashboard page-->
+				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li><!--profile page-->
+        <li class="item" style="float: right;"><a href="dashboard">Duty Roster</a></li><!--duty roster page-->
+        <li class="item"><a href="View_Inventory">Inventory</a></li><!--inventory page-->
+				<li class="item"><a href="reportMainPage">Report</a></li> <!--report page-->
         <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px">
         </div>
         <ul><li><a href="CashierDashboard">Cashier</a></li>
