@@ -98,3 +98,24 @@ Route::get('/ListSearchItem', function () {
     return view('ListSearchItem');
 });
 */
+
+
+// Profile 
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile.index');
+Route::get('/profile/create', [ProfileController::class, 'create'])->name('profile.create');
+Route::post('/profile', [ProfileController::class, 'store'])->name('profile.store');
+Route::get('/profile/{id}/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::put('/profile/{id}', [ProfileController::class, 'update'])->name('profile.update');
+Route::get('/profile/{id}/delete', [ProfileController::class, 'delete'])->name('profile.delete');
+Route::delete('/profile/{id}', [ProfileController::class, 'destroy'])->name('profile.destroy');
+Route::post('/profile/search', [ProfileController::class, 'search'])->name('profile.search');
+
+
+// Duty Roster 
+Route::get('/duty-roster', [DutyRosterController::class, 'index'])->name('dutyRoster.index');
+Route::get('/duty-roster/create', [DutyRosterController::class, 'create'])->name('dutyRoster.create');
+Route::post('/duty-roster', [DutyRosterController::class, 'store'])->name('dutyRoster.store');
+Route::get('/duty-roster/{id}/edit', [DutyRosterController::class, 'edit'])->name('dutyRoster.edit');
+Route::put('/duty-roster/{id}', [DutyRosterController::class, 'update'])->name('dutyRoster.update');
+Route::get('/duty-roster/{id}/delete', [DutyRosterController::class, 'delete'])->name('dutyRoster.delete');
+Route::delete('/duty-roster/{id}', [DutyRosterController::class, 'destroy'])->name('dutyRoster.destroy');

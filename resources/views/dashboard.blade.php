@@ -241,8 +241,8 @@
         </div>
         <ul id="tab">
         <li class="item" style="float: right;"><a href="dashboard">Dashboard</a></li><!--dashboard page-->
-				<li class="item" style="float: right;"><a href="dashboard">Profile</a></li><!--profile page-->
-        <li class="item" style="float: right;"><a href="dashboard">Duty Roster</a></li><!--duty roster page-->
+				<li class="item" style="float: right;"><a href="{{ route('profile.index') }}">Profile</a></li><!--profile page-->
+        <li class="item" style="float: right;"><a href="{{ route('duty-roster.index') }}">Duty Roster</a></li><!--duty roster page-->
         <li class="item"><a href="View_Inventory">Inventory</a></li><!--inventory page-->
 				<li class="item"><a href="reportMainPage">Report</a></li> <!--report page-->
         <div><img src="{{ URL('assets/images/logo.png')}}" alt="UMP.com" width="130px" height="100px">
